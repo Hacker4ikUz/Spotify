@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=”viewport” content=”user-scalable=no” />
+    <title>Spotify | Homepage</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" sizes="32x32" type="image/png" href="https://open.spotifycdn.com/cdn/images/favicon32.8e66b099.png">
+</head>
+<body>
+    <main>
+        <div class="leftside">
+            <div class="logo">
+                <a href="">
+                    <img src="./img/logo.svg" alt="logo-spotify">
+                </a>
+            </div>
+            <div class="nav">
+                <p class="c4">NAVIGATION</p>
+                <a href="./index.html" class="home active">Homepage</a>
+                <a href="#" class="playlist">Playlists</a>
+                <a class="settings">Settings</a>
+            </div>
+            <br><br>
+            <div class="playlists">
+                <p class="c4">PLAYLIST</p>
+                <!-- <a href="#">Name playlista</a> -->
+            </div>
+            <br><br>
+            <div class="liked_songs">
+                <p class="c4">LIKED SONGS</p>
+                <div class="lkd">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <header>
+                <div class="left">
+                    <div class="inp">
+                        <img src="./img/search.svg" alt="search-ico">
+                        <input type="text" name="search" placeholder="Search by name and artist">
+                    </div>
+                    <div class="searched none">
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="head_l">
+                        <b>Leo Man</b>
+                    </div>
+                    <div class="head_r">
+                        <span class="free">Free user</span>
+                    </div>
+                </div>
+            </header>
+            <br>
+            <div class="slider">
+                <div class="leftslide">
+                    <h1 class="artist_1" id="artist">BIG BABY TAPE</h1>
+                    <h2 id="name">Gimme The Loot</h2>
+                    <span class="timee">02:20</span>
+                    <div class="btns">
+                        <button class="btnleft"><</button>
+                        <button class="btnright">></button>
+                    </div>
+                    <div class="sld">
+                        <div class="s1 activ"></div>
+                        <div class="s2"></div>
+                        <div class="s3"></div>
+                        <div class="s4"></div>
+                    </div>
+                </div>
+                <div class="rightslide">
+                    <div class="photo">
+                        <img src="./img/djtape.jpg" alt="BIG_BABY_TAPE" id="sldphoto">
+                        <div class="box"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="musics">
+                <div class="one">
+                    <!-- <span>10 RANDOM SONGS</span> -->
+                </div>
+                <div class="two">
+                </div>
+                <div class="three">
+                </div>
+            </div>
+        </div>
+        <div class="audioplayer">
+            <div class="left_box">
+                <h3 class="nameaud">Big Baby Tape</h3>
+                <p class="c4 titleaud">Hokage</p>
+            </div>
+            <div class="centerbox">
+                <div class="buttons">
+                    <img src="./img/repeat.svg" class="repeat">
+                    <img src="./img/track-prev.svg" class="prev">
+                    <img src="./img/play.svg" class="play">
+                    <img src="./img/track-next.svg" class="next">
+                    <img src="./img/random.svg" class="random">
+                </div>
+                <div class="time">
+                    <span class="start">0</span>
+                    <div class="progress_box">
+                        <audio class="audio" src="./musics/Hokage.mp3"></audio>
+                        <div class="progress"></div>
+                    </div>
+                    <span class="end">3:22</span>
+                </div>
+            </div>
+            <div class="pustoydiv"></div>
+        </div>
+    </main>
+    <div class="modal">
+        <div class="modal-window">
+            <form name="addplaylist" class="addplayls">
+                <div class="headplaylist">
+                    <h2 class="gr">ADD TO PLAYLIST</h2>
+                    <h2></h2>
+                </div>
+                <br>
+                <div class="lists">
+                    <!-- <div class="names">
+                        <h3>Liked Songs</h3>
+                        <h4>10 songs</h4>
+                    </div> -->
+                </div>
+                <br>
+                <div class="newplaylist">
+                    <a href="#" class="newpls">Создать новый плейлист</a>
+                </div>
+                <input type="text" name="name" placeholder="Name of playlist">
+                <button>Save</button>
+            </form>
+        </div>
+        <div class="overlay"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
