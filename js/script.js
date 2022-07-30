@@ -1,5 +1,5 @@
 // let url = 'http://localhost:3001/musics'
-let url = 'hacker4ik.deect.ru/spotify/db.json'
+let url = 'https://hacker4ik.deect.ru/spotify/db.json'
 
 function react() {
     axios.get(url)
