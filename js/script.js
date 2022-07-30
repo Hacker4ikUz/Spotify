@@ -1,5 +1,4 @@
 let url = 'http://localhost:3001/musics'
-
 function react() {
     axios.get(url)
         .then(res => {
